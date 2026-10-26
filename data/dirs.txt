@@ -1,0 +1,9 @@
+/config
+/providers
+/src
+/src/core
+/src/loop
+/src/mgr
+/data
+/data/sessions
+/data/models

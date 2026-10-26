@@ -1,0 +1,15 @@
+LICENSE
+README.md
+brunch.sh
+config/help.txt
+config/system.txt
+src/core/arguments.sh
+src/core/paths.sh
+src/core/version.sh
+src/loop/ai.sh
+src/loop/user.sh
+src/mgr/chat.sh
+src/mgr/control.sh
+src/tools.sh
+src/utils.sh
+version.txt
