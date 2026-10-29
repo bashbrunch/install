@@ -9,3 +9,4 @@
 /data
 /data/sessions
 /data/models
+/data/keys
