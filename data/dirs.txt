@@ -1,6 +1,7 @@
 /config
 /providers
 /src
+/src/lib
 /src/core
 /src/loop
 /src/mgr

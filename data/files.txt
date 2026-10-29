@@ -3,6 +3,9 @@ README.md
 brunch.sh
 config/help.txt
 config/system.txt
+src/lib/colors.sh
+src/lib/utils.sh
+src/lib/cmd.sh
 src/core/arguments.sh
 src/core/paths.sh
 src/core/version.sh
@@ -12,5 +15,4 @@ src/mgr/chat.sh
 src/mgr/control.sh
 src/tool/shell.sh
 src/tool/ssf.sh
-src/utils.sh
 version.txt
