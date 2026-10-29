@@ -10,6 +10,7 @@ src/loop/ai.sh
 src/loop/user.sh
 src/mgr/chat.sh
 src/mgr/control.sh
-src/tools.sh
+src/tool/shell.sh
+src/tool/ssf.sh
 src/utils.sh
 version.txt

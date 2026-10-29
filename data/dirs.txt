@@ -4,6 +4,7 @@
 /src/core
 /src/loop
 /src/mgr
+/src/tool
 /data
 /data/sessions
 /data/models
