@@ -1,5 +1,5 @@
-dirs=$(curl -fsSL "$install_site/data/dirs.txt")
-files=$(curl -fsSL "$install_site/data/files.txt")
+dirs=$(curl -fsSL "$source_site/meta/dirs.txt")
+files=$(curl -fsSL "$source_site/meta/files.txt")
 
 mkdir -p "$brunch_root"
 

@@ -3,7 +3,6 @@
 set -e
 
 export brunch_site="https://bashbrunch.attaditya.space"
-export install_site="$brunch_site/install"
 export source_site="$brunch_site/bashbrunch"
 export brunch_root="$HOME/.bashbrunch"
 
@@ -21,11 +20,12 @@ if [ -d "$brunch_root.data" ]; then
 fi
 
 mkdir -p "$brunch_root"
+script_site="$brunch_site/install/src"
 
-curl -fsSL "$install_site/src/pre.sh" | bash
-curl -fsSL "$install_site/src/download.sh" | bash
-curl -fsSL "$install_site/src/providers.sh" | bash
-curl -fsSL "$install_site/src/post.sh" | bash
+curl -fsSL "$script_site/pre.sh" | bash
+curl -fsSL "$script_site/download.sh" | bash
+curl -fsSL "$script_site/providers.sh" | bash
+curl -fsSL "$script_site/post.sh" | bash
 
 printf "Installation complete!\n\n"
 

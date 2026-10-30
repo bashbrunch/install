@@ -1,4 +1,4 @@
-providers=$(curl -fsSL "$install_site/data/providers.txt")
+providers=$(curl -fsSL "$source_site/meta/providers.txt")
 provider_dir="$brunch_root/providers"
 provider_file="$brunch_root/data/provider.txt"
 model_dir="$brunch_root/data/models"
