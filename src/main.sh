@@ -12,11 +12,19 @@ if [ -d "$brunch_root/data" ]; then
   mv "$brunch_root/data" "$brunch_root.data"
 fi
 
+if [ -d "$brunch_root/extensions" ]; then
+  mv "$brunch_root/extensions" "$brunch_root.extensions"
+fi
+
 rm -rf "$brunch_root"
 mkdir -p "$brunch_root"
 
 if [ -d "$brunch_root.data" ]; then
   mv "$brunch_root.data" "$brunch_root/data"
+fi
+
+if [ -d "$brunch_root.extensions" ]; then
+  mv "$brunch_root.extensions" "$brunch_root/extensions"
 fi
 
 mkdir -p "$brunch_root"
