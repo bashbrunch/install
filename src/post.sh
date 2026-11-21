@@ -14,7 +14,7 @@ add_alias() {
   echo "# BashBrunch alias" >> "$shell_config"
   echo "" >> "$shell_config"
   echo "export BRUNCH_ROOT='$brunch_root'" >> "$shell_config"
-  echo "alias brunch='\$BRUNCH_ROOT/brunch.sh'" >> "$shell_config"
+  echo "alias brunch='$BRUNCH_ROOT/brunch.sh'" >> "$shell_config"
   echo "" >> "$shell_config"
 
   echo "Added alias to $shell_config. Run: source $shell_config"
