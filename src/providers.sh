@@ -9,6 +9,7 @@ for provider in $providers; do
   model_file="$model_dir/$provider.txt"
   keys_file="$keys_dir/$provider.txt"
 
+  echo "Downloading provider: $provider"
   curl -fsSL "$provider_site" > "$provider_dir/$provider.sh"
 
   if [ ! -f "$model_file" ]; then
