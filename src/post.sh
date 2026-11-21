@@ -1,7 +1,7 @@
 chmod +x "$brunch_root/brunch.sh"
 chmod +x "$brunch_root/providers/"*.sh
 
-printf "\n\n"
+printf "\n"
 
 add_alias() {
   echo "Adding alias to your shell configuration file..."
@@ -19,11 +19,12 @@ add_alias() {
   echo "alias brunch='$BRUNCH_ROOT/brunch.sh'" >> "$shell_config"
   echo "" >> "$shell_config"
 
-  printf "Added alias to $shell_config.\nRun: source $shell_config\n"
+  printf "Added alias to $shell_config.\n\n"
+  printf "Run: source $shell_config\n"
 }
 
 if [ -n "$BRUNCH_ROOT" ]; then
-  echo "Alias already exists."
+  printf "Alias already exists.\n\n"
 else
   add_alias
 fi
