@@ -2,9 +2,14 @@
 
 set -e
 
+export brunch_root="$HOME/.bashbrunch"
+
+if [ -n "$BRUNCH_ROOT" ]; then
+  export brunch_root="$BRUNCH_ROOT"
+fi
+
 export brunch_site="https://bashbrunch.attaditya.space"
 export source_site="$brunch_site/bashbrunch"
-export brunch_root="$HOME/.bashbrunch"
 
 printf "BashBrunch Installer Script\n\n"
 
