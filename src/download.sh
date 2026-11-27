@@ -9,16 +9,22 @@ for dir in $dirs; do
   mkdir -p "$brunch_root/$dir"
 done
 
-for file in $files; do
+download_file() {
+  local file="$1"
+
   echo "Downloading source file: $file"
   curl -fsSL "$source_site/$file" > "$brunch_root/$file"
   status=$?
 
   if [ $status -ne 0 ]; then
     echo "Error downloading $file. Exiting."
-    exit 1
   fi
+}
+
+for file in $files; do
+  download_file "$file" &
 done
 
+wait
 touch "$brunch_root/data/history.txt"
 
