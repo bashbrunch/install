@@ -35,10 +35,10 @@ fi
 mkdir -p "$brunch_root"
 script_site="$brunch_site/install/src"
 
-curl -fsSL "$script_site/pre.sh" | bash
-curl -fsSL "$script_site/download.sh" | bash
-curl -fsSL "$script_site/providers.sh" | bash
-curl -fsSL "$script_site/post.sh" | bash
+curl -fsSL "$script_site/pre.sh" | bash -s -- $@
+curl -fsSL "$script_site/download.sh" | bash -s -- $@
+curl -fsSL "$script_site/providers.sh" | bash -s -- $@
+curl -fsSL "$script_site/post.sh" | bash -s -- $@
 
 printf "Installation complete!\n\n"
 
